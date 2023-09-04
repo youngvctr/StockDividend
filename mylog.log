@@ -1,0 +1,48 @@
+18:59:36.718 [main] INFO  com.stock.Application - Starting Application using Java 11.0.17 on DESKTOP-VCNGC1T with PID 2172 (C:\Users\JH\Desktop\zb-tasks\month-4\stock-dividend\build\classes\java\main started by JH in C:\Users\JH\Desktop\zb-tasks\month-4\stock-dividend)
+18:59:36.720 [main] INFO  com.stock.Application - No active profile set, falling back to default profiles: default
+18:59:37.403 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+18:59:37.404 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:59:37.487 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 74 ms. Found 3 JPA repository interfaces.
+18:59:37.498 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+18:59:37.499 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+18:59:37.514 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.stock.persist.CompanyRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+18:59:37.516 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.stock.persist.DividendRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+18:59:37.517 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.stock.persist.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+18:59:37.517 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+18:59:37.798 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@22d9bc14' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:59:37.801 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:59:38.044 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+18:59:38.053 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:59:38.053 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:59:38.054 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+18:59:38.141 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:59:38.141 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1378 ms
+18:59:38.175 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+18:59:38.307 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+18:59:38.316 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:snowball'
+18:59:38.530 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:59:38.582 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+18:59:38.700 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+18:59:38.806 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+18:59:39.432 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:59:39.442 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:59:39.882 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:59:40.172 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/h2-console/**'] with []
+18:59:40.203 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6ac4f31d, org.springframework.security.web.context.SecurityContextPersistenceFilter@811d8d6, org.springframework.security.web.header.HeaderWriterFilter@ecb8b3e, org.springframework.security.web.authentication.logout.LogoutFilter@5b827796, com.stock.security.JwtAuthenticationFilter@1e14b269, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6dcc7696, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@19d0d1ab, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@106f2425, org.springframework.security.web.session.SessionManagementFilter@3bf52f8f, org.springframework.security.web.access.ExceptionTranslationFilter@79f3f34c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@37a14aa1]
+18:59:40.648 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+18:59:40.666 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+18:59:40.679 [main] INFO  com.stock.Application - Started Application in 4.422 seconds (JVM running for 5.673)
+18:59:45.717 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:59:45.719 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:59:45.720 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+18:59:50.956 [http-nio-8080-exec-3] INFO  com.stock.web.AuthController - user login -> grace
+19:00:00.096 [http-nio-8080-exec-4] INFO  c.s.security.JwtAuthenticationFilter - [grace] -> /company
+19:00:09.547 [http-nio-8080-exec-5] INFO  c.s.security.JwtAuthenticationFilter - [grace] -> /company
+19:00:16.788 [http-nio-8080-exec-6] INFO  c.s.security.JwtAuthenticationFilter - [grace] -> /company
+19:02:02.765 [http-nio-8080-exec-8] INFO  com.stock.web.AuthController - user login -> reader
+19:02:11.857 [http-nio-8080-exec-9] INFO  c.s.security.JwtAuthenticationFilter - [reader] -> /company
+19:02:24.446 [http-nio-8080-exec-2] INFO  c.s.security.JwtAuthenticationFilter - [grace] -> /company
+19:03:21.624 [http-nio-8080-exec-5] INFO  c.s.security.JwtAuthenticationFilter - [reader] -> /company/NNN
+19:13:56.840 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+19:13:56.842 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+19:13:56.846 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
